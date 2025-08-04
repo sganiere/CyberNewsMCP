@@ -4,7 +4,7 @@ A Model Context Protocol (MCP) server that provides comprehensive access to cybe
 
 ## Features
 
-- **11 Curated Cybersecurity RSS Sources** - Top security news, threat intelligence, and research feeds
+- **16 Premium Cybersecurity RSS Sources** - Enterprise-grade security news, threat intelligence, and research feeds
 - **Advanced Search** - Keyword-based search with relevance scoring and filtering
 - **Content Summarization** - Generate concise 100-125 word news briefs
 - **Trending Topic Analysis** - Extract and analyze trending cybersecurity topics
@@ -13,31 +13,36 @@ A Model Context Protocol (MCP) server that provides comprehensive access to cybe
 
 ## Supported RSS Feeds
 
-### News Sources
-- Krebs on Security
-- The Hacker News
-- Dark Reading
-- Threatpost
-- Security Week
-- BleepingComputer
-- TheRecord
+### News Sources (10 feeds)
+- **Krebs on Security** - In-depth security news and investigation
+- **Microsoft Security Blog** - Microsoft Security insights and updates
+- **Proofpoint Threat Research** - Email security and threat research
+- **SentinelOne Labs** - Endpoint security research and analysis
+- **CrowdStrike Threat Research** - Advanced threat intelligence and research
+- **The Hacker News** - Latest cybersecurity news and updates
+- **Dark Reading** - Enterprise security news and analysis
+- **Threatpost** - Breaking cybersecurity news
+- **Security Week** - Security industry news and analysis
+- **BleepingComputer** - Computer security and technology news
+- **TheRecord** - Cybersecurity news and investigations
 
-### Threat Intelligence
-- SANS Internet Storm Center
-- FireEye Threat Research
+### Threat Intelligence (2 feeds)
+- **SANS Internet Storm Center** - Daily security diary and threat analysis
+- **FireEye Threat Research** - Advanced threat research and analysis
 
-### Vulnerabilities
-- CISA Alerts
+### Vulnerabilities (1 feed)
+- **CISA Alerts** - Official US cybersecurity alerts and advisories
 
-### Research
-- Malwarebytes Labs
+### Research (2 feeds)
+- **EclecticIQ Threat Intelligence** - Strategic threat intelligence research
+- **Malwarebytes Labs** - Malware research and security insights
 
 ## Installation
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd hackernews_MCP2
+git clone https://github.com/sganiere/CyberNewsMCP
+cd CyberNewsMCP
 ```
 
 2. Install dependencies:
@@ -48,25 +53,6 @@ npm install
 3. Build the server:
 ```bash
 npm run build
-```
-
-## Usage
-
-### Development Mode
-```bash
-npm run dev
-```
-
-### Production Mode
-```bash
-npm start
-```
-
-### Other Commands
-```bash
-npm run typecheck  # Type checking
-npm run lint      # Code linting
-npm test         # Run tests
 ```
 
 ## MCP Integration
@@ -80,7 +66,7 @@ Add to your `claude_desktop_config.json`:
   "mcpServers": {
     "cybersecurity-rss": {
       "command": "node",
-      "args": ["/path/to/hackernews_MCP2/dist/index.js"],
+      "args": ["/path/to/CyberNewsMCP/dist/index.js"],
       "env": {}
     }
   }
@@ -163,109 +149,6 @@ Once integrated with Claude Desktop, you can use natural language queries like:
 - *"Search for recent vulnerability disclosures with CVE references"*
 - *"Get summaries of the latest security research from Malwarebytes"*
 
-### Direct Tool Usage (For Developers)
-
-```javascript
-// List all news feeds
-{
-  "tool": "list_feeds",
-  "arguments": {
-    "category": "news"
-  }
-}
-
-// Search for AI security topics
-{
-  "tool": "search_by_keywords", 
-  "arguments": {
-    "keywords": ["AI", "artificial intelligence", "machine learning", "threat actor"],
-    "dateFrom": "2024-07-01",
-    "maxResults": 25
-  }
-}
-
-// Get trending topics from last month
-{
-  "tool": "get_trending_topics",
-  "arguments": {
-    "daysBack": 30,
-    "minMentions": 5,
-    "maxTopics": 15
-  }
-}
-
-// Generate news briefs with sources
-{
-  "tool": "get_news_briefs",
-  "arguments": {
-    "dateFrom": "2024-07-01",
-    "maxBriefs": 15
-  }
-}
-```
-
-## Specialized AI & Cybersecurity Intelligence
-
-This MCP server is specifically designed for **defensive cybersecurity research** with a focus on:
-
-### 🤖 **AI Security Threat Intelligence**
-- Track how threat actors are weaponizing AI technologies
-- Monitor AI-powered attack techniques and defense strategies  
-- Analyze trends in AI/ML security vulnerabilities
-- Research deepfake and synthetic media threats
-
-### 🛡️ **Comprehensive Threat Coverage**
-- **Nation-state APT activities** and attribution research
-- **Ransomware campaigns** and emerging variants
-- **Zero-day vulnerabilities** and exploit development
-- **Supply chain attacks** and software compromise
-- **IoT and critical infrastructure** security incidents
-
-### 📊 **Intelligence Analysis Features**
-- **Trend identification** across multiple authoritative sources
-- **Relevance scoring** for search results based on recency and keyword density
-- **Content summarization** optimized for security professionals
-- **Source attribution** with direct links to original articles
-- **Date-range filtering** for incident timeline analysis
-
-## Architecture
-
-- **RSSFeedParser**: Handles RSS feed fetching and HTML content extraction
-- **FeedSearcher**: Provides search functionality with relevance scoring
-- **ContentSummarizer**: Generates summaries and extracts trending topics
-- **CyberSecurityRSSServer**: Main MCP server implementation
-
-## Security Focus
-
-This server is designed specifically for **defensive security purposes**:
-- Threat intelligence gathering
-- Cybersecurity news aggregation
-- Security research and analysis
-
-## Technical Details
-
-- **Language**: TypeScript
-- **Runtime**: Node.js (ES Modules)
-- **Dependencies**: 
-  - `@modelcontextprotocol/sdk` - MCP implementation
-  - `rss-parser` - RSS feed parsing
-  - `cheerio` - HTML parsing and sanitization
-  - `node-fetch` - HTTP requests
-- **Build System**: TypeScript compiler
-- **Code Quality**: ESLint with TypeScript rules
-
-## Development
-
-### Project Structure
-```
-src/
-├── index.ts              # Main MCP server
-├── feeds.ts              # Feed definitions and utilities
-├── types.ts             # TypeScript type definitions
-├── rss-parser.ts        # RSS parsing and content extraction
-├── feed-searcher.ts     # Search functionality
-└── content-summarizer.ts # Summarization and trending analysis
-```
 
 ### Adding New Feeds
 
@@ -287,12 +170,6 @@ MIT License - see LICENSE file for details.
 
 ## Troubleshooting
 
-### Common Issues
-
-1. **Feed parsing errors**: Some RSS feeds may be temporarily unavailable
-2. **Network timeouts**: Feeds have 10-second timeout limits
-3. **Memory usage**: Large result sets are automatically limited
-
 ### Debugging
 
 Enable debug logging by setting environment variable:
@@ -303,3 +180,11 @@ DEBUG=true npm start
 ## Support
 
 For issues and feature requests, please use the GitHub issue tracker.
+
+## AI Influence Level
+
+Level 5 - AI Created, Little Human Involvment
+
+This tool was created by Claude Code
+
+https://danielmiessler.com/blog/ai-influence-level-ail 

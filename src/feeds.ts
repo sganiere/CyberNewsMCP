@@ -14,6 +14,36 @@ export const CYBERSECURITY_FEEDS: CyberSecurityFeed[] = [
     category: "threat-intelligence"
   },
   {
+    name: "EclecticIQ Threat Intelligence",
+    url: "https://blog.eclecticiq.com/rss.xml",
+    description: "EclecticIQ Threat Intelligence Blog",
+    category: "research"
+  },
+  {
+    name: "Microsoft Security Blog",
+    url: "https://www.microsoft.com/security/blog/feed/",
+    description: "Microsoft Security Blog",
+    category: "news"
+  },
+  {
+    name: "Proofpoint Threat Research",
+    url: "https://www.proofpoint.com/us/threat-insight-blog.xml",
+    description: "Proofpoint Threat Research Blog",
+    category: "news"
+  },
+  {
+    name: "SentinelOne Labs",
+    url: "https://www.sentinelone.com/labs/feed/",
+    description: "SentinelOne Labs Blog",
+    category: "news"
+  },
+  {
+    name: "Crowdstrike Threat Research",
+    url: "https://www.crowdstrike.com/blog/category/threat-intel-research/",
+    description: "Crowdstrike Threat Research Blog",
+    category: "news"
+  },
+  {
     name: "CISA Alerts",
     url: "https://www.cisa.gov/cybersecurity-advisories/all.xml",
     description: "Official US cybersecurity alerts and advisories",

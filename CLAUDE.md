@@ -42,7 +42,7 @@ npm run typecheck
 
 ### Key Features
 
-- **Predefined Feeds**: Curated list of 11 top cybersecurity RSS sources in `src/feeds.ts`
+- **Predefined Feeds**: Curated list of 16 premium cybersecurity RSS sources in `src/feeds.ts`
 - **Advanced Search**: Text search, keyword matching, date filtering, and category filtering
 - **Content Summarization**: Automated summarization with focus areas and key point extraction
 - **Trending Analysis**: Topic extraction and trend identification across feeds
@@ -60,10 +60,10 @@ npm run typecheck
 
 ## Feed Sources Included
 
-- **News**: Krebs on Security, The Hacker News, Dark Reading, Threatpost, Security Week, BleepingComputer, TheRecord
+- **News**: Krebs on Security, Microsoft Security Blog, Proofpoint Threat Research, SentinelOne Labs, CrowdStrike Threat Research, The Hacker News, Dark Reading, Threatpost, Security Week, BleepingComputer, TheRecord
 - **Threat Intelligence**: SANS Internet Storm Center, FireEye Threat Research  
 - **Vulnerabilities**: CISA Alerts
-- **Research**: Malwarebytes Labs
+- **Research**: EclecticIQ Threat Intelligence, Malwarebytes Labs
 
 ## Security Focus
 

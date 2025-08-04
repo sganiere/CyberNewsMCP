@@ -1,7 +1,8 @@
+<div align="center">
 <img src="logo.png" width="400" style="width: 300px; float: center">
+</div>
 
-
-# Cybersecurity RSS MCP Server
+# Cyber Security RSS News MCP Server
 
 A Model Context Protocol (MCP) server that provides comprehensive access to cybersecurity RSS feeds with advanced search, summarization, and trending topic analysis capabilities.
 

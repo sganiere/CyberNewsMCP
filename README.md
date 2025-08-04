@@ -1,3 +1,6 @@
+<img src="logo.png" width="400" style="width: 300px; float: center">
+
+
 # Cybersecurity RSS MCP Server
 
 A Model Context Protocol (MCP) server that provides comprehensive access to cybersecurity RSS feeds with advanced search, summarization, and trending topic analysis capabilities.

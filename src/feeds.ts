@@ -5,13 +5,19 @@ export const CYBERSECURITY_FEEDS: CyberSecurityFeed[] = [
     name: "Krebs on Security",
     url: "https://krebsonsecurity.com/feed/",
     description: "In-depth security news and investigation",
-    category: "news"
+    category: "research"
+  },
+  {
+    name: "Palo Alto - Unit 42",
+    url: "http://researchcenter.paloaltonetworks.com/unit42/feed/",
+    description: "Palo Alto - Unit 42",
+    category: "research"
   },
   {
     name: "SANS Internet Storm Center",
     url: "https://isc.sans.edu/rssfeed.xml",
     description: "Daily security diary and threat analysis",
-    category: "threat-intelligence"
+    category: "news"
   },
   {
     name: "EclecticIQ Threat Intelligence",
@@ -29,19 +35,19 @@ export const CYBERSECURITY_FEEDS: CyberSecurityFeed[] = [
     name: "Proofpoint Threat Research",
     url: "https://www.proofpoint.com/us/threat-insight-blog.xml",
     description: "Proofpoint Threat Research Blog",
-    category: "news"
+    category: "research"
   },
   {
     name: "SentinelOne Labs",
     url: "https://www.sentinelone.com/labs/feed/",
     description: "SentinelOne Labs Blog",
-    category: "news"
+    category: "research"
   },
   {
     name: "Crowdstrike Threat Research",
     url: "https://www.crowdstrike.com/blog/category/threat-intel-research/",
     description: "Crowdstrike Threat Research Blog",
-    category: "news"
+    category: "research"
   },
   {
     name: "CISA Alerts",
@@ -78,12 +84,6 @@ export const CYBERSECURITY_FEEDS: CyberSecurityFeed[] = [
     url: "https://blog.malwarebytes.com/feed/",
     description: "Malware research and security insights",
     category: "research"
-  },
-  {
-    name: "FireEye Threat Research",
-    url: "https://www.fireeye.com/blog/threat-research/_jcr_content.feed",
-    description: "Advanced threat research and analysis",
-    category: "threat-intelligence"
   },
   {
     name: "BleepingComputer",

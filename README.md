@@ -8,7 +8,7 @@ A Model Context Protocol (MCP) server that provides comprehensive access to cybe
 
 ## Features
 
-- **16 Premium Cybersecurity RSS Sources** - Enterprise-grade security news, threat intelligence, and research feeds
+- **17  Cybersecurity RSS Sources** - Enterprise-grade security news and research feeds
 - **Advanced Search** - Keyword-based search with relevance scoring and filtering
 - **Content Summarization** - Generate concise 100-125 word news briefs
 - **Trending Topic Analysis** - Extract and analyze trending cybersecurity topics
@@ -17,29 +17,28 @@ A Model Context Protocol (MCP) server that provides comprehensive access to cybe
 
 ## Supported RSS Feeds
 
-### News Sources (10 feeds)
-- **Krebs on Security** - In-depth security news and investigation
-- **Microsoft Security Blog** - Microsoft Security insights and updates
-- **Proofpoint Threat Research** - Email security and threat research
-- **SentinelOne Labs** - Endpoint security research and analysis
-- **CrowdStrike Threat Research** - Advanced threat intelligence and research
+### News Sources (7 feeds)
+
 - **The Hacker News** - Latest cybersecurity news and updates
 - **Dark Reading** - Enterprise security news and analysis
 - **Threatpost** - Breaking cybersecurity news
 - **Security Week** - Security industry news and analysis
 - **BleepingComputer** - Computer security and technology news
 - **TheRecord** - Cybersecurity news and investigations
-
-### Threat Intelligence (2 feeds)
 - **SANS Internet Storm Center** - Daily security diary and threat analysis
-- **FireEye Threat Research** - Advanced threat research and analysis
 
 ### Vulnerabilities (1 feed)
 - **CISA Alerts** - Official US cybersecurity alerts and advisories
 
-### Research (2 feeds)
+### Research (8 feeds)
 - **EclecticIQ Threat Intelligence** - Strategic threat intelligence research
 - **Malwarebytes Labs** - Malware research and security insights
+- **Krebs on Security** - In-depth security news and investigation
+- **Microsoft Security Blog** - Microsoft Security insights and updates
+- **Proofpoint Threat Research** - Email security and threat research
+- **SentinelOne Labs** - Endpoint security research and analysis
+- **CrowdStrike Threat Research** - Advanced threat intelligence and research
+- **Palo Alto Unit 43 Research** - Unit 42 threat intelligence research
 
 ## Installation
 

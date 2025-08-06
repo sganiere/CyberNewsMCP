@@ -8,7 +8,7 @@ A Model Context Protocol (MCP) server that provides comprehensive access to cybe
 
 ## Features
 
-- **17  Cybersecurity RSS Sources** - Enterprise-grade security news and research feeds
+- **16 Cybersecurity RSS Sources** - Enterprise-grade security news and research feeds
 - **Advanced Search** - Keyword-based search with relevance scoring and filtering
 - **Content Summarization** - Generate concise 100-125 word news briefs
 - **Trending Topic Analysis** - Extract and analyze trending cybersecurity topics

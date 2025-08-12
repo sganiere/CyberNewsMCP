@@ -9,7 +9,7 @@ export class RSSFeedParser {
 
   constructor() {
     this.parser = new Parser({
-      timeout: 10000,
+      timeout: 30000,
       headers: {
         'User-Agent': 'CyberSecurity-RSS-MCP-Server/1.0'
       }
@@ -75,7 +75,7 @@ export class RSSFeedParser {
       }
 
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 10000);
+      const timeoutId = setTimeout(() => controller.abort(), 30000);
       
       const response = await fetch(url, {
         headers: {

@@ -9,7 +9,7 @@ export const CYBERSECURITY_FEEDS: CyberSecurityFeed[] = [
   },
   {
     name: "Palo Alto - Unit 42",
-    url: "https://researchcenter.paloaltonetworks.com/unit42/feed/",
+    url: "http://feeds.feedburner.com/Unit42",
     description: "Palo Alto - Unit 42",
     category: "research"
   },

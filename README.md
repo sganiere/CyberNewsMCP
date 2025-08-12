@@ -8,7 +8,7 @@ A Model Context Protocol (MCP) server that provides comprehensive access to cybe
 
 ## Features
 
-- **16 Cybersecurity RSS Sources** - Enterprise-grade security news and research feeds
+- **19 Cybersecurity RSS Sources** - Enterprise-grade security news and research feeds
 - **Advanced Search** - Keyword-based search with relevance scoring and filtering
 - **Content Summarization** - Generate concise 100-125 word news briefs
 - **Trending Topic Analysis** - Extract and analyze trending cybersecurity topics
@@ -17,7 +17,7 @@ A Model Context Protocol (MCP) server that provides comprehensive access to cybe
 
 ## Supported RSS Feeds
 
-### News Sources (7 feeds)
+### News Sources (8 feeds)
 
 - **The Hacker News** - Latest cybersecurity news and updates
 - **Dark Reading** - Enterprise security news and analysis
@@ -26,11 +26,12 @@ A Model Context Protocol (MCP) server that provides comprehensive access to cybe
 - **BleepingComputer** - Computer security and technology news
 - **TheRecord** - Cybersecurity news and investigations
 - **SANS Internet Storm Center** - Daily security diary and threat analysis
+- **The Register** - The Register Security News
 
 ### Vulnerabilities (1 feed)
 - **CISA Alerts** - Official US cybersecurity alerts and advisories
 
-### Research (8 feeds)
+### Research (10 feeds)
 - **EclecticIQ Threat Intelligence** - Strategic threat intelligence research
 - **Malwarebytes Labs** - Malware research and security insights
 - **Krebs on Security** - In-depth security news and investigation
@@ -38,7 +39,10 @@ A Model Context Protocol (MCP) server that provides comprehensive access to cybe
 - **Proofpoint Threat Research** - Email security and threat research
 - **SentinelOne Labs** - Endpoint security research and analysis
 - **CrowdStrike Threat Research** - Advanced threat intelligence and research
-- **Palo Alto Unit 43 Research** - Unit 42 threat intelligence research
+- **Palo Alto Unit 42 Research** - Unit 42 threat intelligence research
+- **Google Intelligence Mandiant** - Google Mandiant intelligence
+- **Wired Security** - Wired Security
+
 
 ## Installation
 

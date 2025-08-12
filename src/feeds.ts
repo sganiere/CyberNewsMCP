@@ -2,6 +2,12 @@ import { CyberSecurityFeed } from './types.js';
 
 export const CYBERSECURITY_FEEDS: CyberSecurityFeed[] = [
   {
+    name: "Google Intelligence Mandiant",
+    url: "https://cloudblog.withgoogle.com/topics/threat-intelligence/rss",
+    description: "Google Intelligence Mandiant",
+    category: "research"
+  },
+  {
     name: "Krebs on Security",
     url: "https://krebsonsecurity.com/feed/",
     description: "In-depth security news and investigation",
@@ -72,6 +78,18 @@ export const CYBERSECURITY_FEEDS: CyberSecurityFeed[] = [
     url: "https://threatpost.com/feed/",
     description: "Breaking cybersecurity news",
     category: "news"
+  },
+  {
+    name: "The Register",
+    url: "http://www.theregister.co.uk/security/headlines.atom",
+    description: "The Register Security News",
+    category: "news"
+  },
+  {
+    name: "Wired Security",
+    url: "https://www.wired.com/feed/category/security/latest/rss",
+    description: "Wired Security News",
+    category: "research"
   },
   {
     name: "Security Week",

@@ -45,7 +45,7 @@ export const CYBERSECURITY_FEEDS: CyberSecurityFeed[] = [
   },
   {
     name: "Crowdstrike Threat Research",
-    url: "https://www.crowdstrike.com/blog/category/threat-intel-research/",
+    url: "https://www.crowdstrike.com/blog/feed/",
     description: "Crowdstrike Threat Research Blog",
     category: "research"
   },

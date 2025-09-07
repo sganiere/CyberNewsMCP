@@ -77,6 +77,11 @@ class CyberSecurityRSSServer {
     this.feedCache = new Map();
 
     this.setupToolHandlers();
+    
+    // Log initialization for debugging
+    this.server.onerror = (error) => {
+      console.error('[MCP Server Error]', error);
+    };
   }
 
   private setupToolHandlers() {
@@ -761,12 +766,24 @@ class CyberSecurityRSSServer {
   }
 
   async run() {
-    const transport = new StdioServerTransport();
-    await this.server.connect(transport);
-    console.error('Cybersecurity RSS MCP Server running on stdio');
+    try {
+      console.error('Starting Cybersecurity RSS MCP Server...');
+      const transport = new StdioServerTransport();
+      
+      console.error('Connecting to transport...');
+      await this.server.connect(transport);
+      
+      console.error('Cybersecurity RSS MCP Server running on stdio - ready to accept requests');
+    } catch (error) {
+      console.error('Failed to start server:', error);
+      throw error;
+    }
   }
 }
 
 // Start the server
 const server = new CyberSecurityRSSServer();
-server.run().catch(console.error);
+server.run().catch((error) => {
+  console.error('Fatal error:', error);
+  process.exit(1);
+});

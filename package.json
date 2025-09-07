@@ -12,11 +12,16 @@
     "lint": "eslint src/**/*.ts",
     "typecheck": "tsc --noEmit"
   },
-  "keywords": ["mcp", "rss", "cybersecurity", "threat-intelligence"],
+  "keywords": [
+    "mcp",
+    "rss",
+    "cybersecurity",
+    "threat-intelligence"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^0.6.0",
+    "@modelcontextprotocol/sdk": "^1.17.5",
     "cheerio": "^1.0.0",
     "node-fetch": "^3.3.2",
     "rss-parser": "^3.13.0"

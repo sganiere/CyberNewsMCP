@@ -114,6 +114,18 @@ export const CYBERSECURITY_FEEDS: CyberSecurityFeed[] = [
     url: "https://therecord.media/feed/",
     description: "Cybersecurity news and investigations",
     category: "news"
+  },
+  {
+    name: "NowSecure",
+    url: "https://www.nowsecure.com/feed/?post_type=ns_breach_item",
+    description: "NowSecure Mobile Breach Feed",
+    category: "news"
+  },
+  {
+    name: "SEC Cyber Incident Tracker",
+    url: "https://www.board-cybersecurity.com/incidents/tracker/index.xml",
+    description: "SEC Cyber Incident Tracker from Andrew Hoog",
+    category: "news"
   }
 ];
 

@@ -8,7 +8,7 @@ A Model Context Protocol (MCP) server that provides comprehensive access to cybe
 
 ## Features
 
-- **19 Cybersecurity RSS Sources** - Enterprise-grade security news and research feeds
+- **21 Cybersecurity RSS Sources** - Enterprise-grade security news and research feeds
 - **Advanced Search** - Keyword-based search with relevance scoring and filtering
 - **Content Summarization** - Generate concise 100-125 word news briefs
 - **Trending Topic Analysis** - Extract and analyze trending cybersecurity topics
@@ -17,7 +17,7 @@ A Model Context Protocol (MCP) server that provides comprehensive access to cybe
 
 ## Supported RSS Feeds
 
-### News Sources (8 feeds)
+### News Sources (10 feeds)
 
 - **The Hacker News** - Latest cybersecurity news and updates
 - **Dark Reading** - Enterprise security news and analysis
@@ -27,6 +27,8 @@ A Model Context Protocol (MCP) server that provides comprehensive access to cybe
 - **TheRecord** - Cybersecurity news and investigations
 - **SANS Internet Storm Center** - Daily security diary and threat analysis
 - **The Register** - The Register Security News
+- **NowSecure** - Mobile Breach Feed
+- **SEC Cyber Incident Tracker** - SEC Cyber incident tracker from Andrew Hoog
 
 ### Vulnerabilities (1 feed)
 - **CISA Alerts** - Official US cybersecurity alerts and advisories
